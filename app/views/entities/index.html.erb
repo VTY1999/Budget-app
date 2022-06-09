@@ -1,0 +1,8 @@
+<h1>Transactions</h1>
+
+<div id="records">
+  <% @entities.each do |entity| %>
+    <%= render entity %>
+    <%= link_to "View", category_entity_url%>
+  <% end %>
+</div>

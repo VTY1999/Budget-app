@@ -1,0 +1,13 @@
+<nav class="header">
+  <div class="icons">
+    <%= link_to  category_entity_path do %>
+      <i class=""></i>
+    <% end %>
+  </div>
+  <h1 class="header">Editing Transaction</h1>
+  <div class="actions">
+    <input type="submit" name="commit" value="save" class="login-button new-edit-cat" form="new-tran-from" data-disable-with="Log in">
+  </div>
+</nav>
+
+<%= render "form", entity: @entity %>

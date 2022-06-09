@@ -1,0 +1,59 @@
+<% render @category %>
+
+<nav class="header-categories d-flex flex-center">
+  <div class="icons">
+    <%= link_to  categories_path do %>
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    <% end %>
+  </div>
+  <h1 class="headers">CATEGORY DETAILS</h1>
+</nav>
+
+<article class="details">
+  <div class="cat-details">
+    <div class="">
+      <%= image_tag(@category.image, class:"image") %>
+    </div>
+    <div class="name-cat">
+      <h3 class=""><%= @category.name %></h3>
+    </div>
+    <div class="join">
+    <p class="total-amount1">$<%=@category.total_amount%></p>
+      <div class="delete-btn">
+        <%= button_to "DESTROY", @category, class:"delete", method: :delete %>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr class="line-bar">
+  <p class="date"> <%= @category.created_at.strftime('%Y') %>
+     <span>_<%= @category.created_at.to_formatted_s(:short) %></span>
+  </p>
+  <div class="total">
+    <p class="total-pay">TOTAL PAYMENT</p>
+    <p class="total-amount">Tolal: $<%=@category.total_amount%></p>
+  </div>
+  <br>
+  <hr class="line-bar">
+
+  <div> 
+    <h2  class="transactions">List of Transaction </h2>
+    <ul class="categoies-records">
+      <% if @entities.empty? %>
+        <br>
+        <p class="no">No transaction found!</p>
+      <% end %>
+      <% @category.recent_transactions.each do |entity| %>
+        <%= link_to category_entity_path(@category, entity) do %>
+          <li id="category-record">
+            <%= render 'entities/entity',  entity: entity, class: "total" %>
+          </li>
+        <%end%>
+      <%end%>
+    </ul>
+
+    <div class="action-btn">
+      <%= link_to "Add Transaction", new_category_entity_path(@category.id), class: "add-tran" %>
+    </div>
+  </div>
+</article>
