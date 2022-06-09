@@ -1,15 +1,335 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
+ *= require font-awesome
  */
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+  font-family: 'proxima-nova', sans-serif;
+}
+
+.splash {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.home-header {
+  font-size: 45px;
+  font-weight: bold;
+  color: #434b54;
+  margin-bottom: 80px;
+}
+
+.buttons {
+  align-items: center;
+  width: 80%;
+}
+
+.splash-btns {
+  width: 100%;
+  color: #fff;
+  background-color: #3778c2;
+  border: transparent;
+  font-size: 20px;
+  padding: 2%;
+  margin-top: 20%;
+}
+
+.splash-btns2 {
+  width: 100%;
+  border: transparent;
+  font-size: 20px;
+  padding: 2%;
+  background-color: #ffffff00;
+  color: #636363;
+}
+
+.headers {
+  background-color: #3778c2;
+  text-align: center;
+  color: #fff;
+  padding: 1%;
+}
+
+.field {
+  width: 100%;
+  color: #636363;
+  font-size: 17px;
+  padding: 2%;
+}
+
+.links {
+  text-align: center;
+}
+
+.link {
+  color: #434b548c;
+}
+
+.btn {
+  text-align: center;
+}
+
+.actions {
+  border-radius: 35px;
+  padding: 1%;
+  font-size: 14px;
+  width: 50%;
+  color: #c9c9c9;
+  border: 1px solid #a8a8a8;
+  margin-top: 10px;
+}
+
+.actions:hover {
+  background-color: #162a60;
+}
+
+.btn-out {
+  color: #fff;
+  text-align: end;
+  margin-bottom: -40px;
+  margin-right: 20px;
+  line-height: 40px;
+}
+
+.btn-cat {
+  border: 2px solid #fff;
+  background-color: #5fb523;
+  font-size: 15px;
+  height: 50%;
+  width: 80%;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.new-cat-btn {
+  background-color: #5fb523;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  text-align: center;
+  padding-top: 1%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.c {
+  color: #fff;
+}
+
+.fa {
+  color: #fff;
+  position: absolute;
+  padding: 2%;
+}
+
+.categories {
+ display: flex;
+ width: 20%;
+ height: 20%;
+}
+
+.details {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border: 1px solid #0000001d;
+}
+
+.cat-details {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 3%;
+  justify-content: space-between;
+}
+
+.name-cat {
+  margin-right: 100px;
+  color: #63636390;
+  width: 100%;
+}
+
+.total-amount1 {
+  text-align: end;
+  color: #636363;
+  font-weight: bold;
+}
+
+.image {
+  height: 70%;
+  width: 35%;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+}
+
+.delete {
+  background-color: #15184e;
+  color: #fff;
+  border-radius: 10px;
+  padding: 8%;
+  font-weight: bold;
+  margin-right: 2px;
+  margin-top: 5px;
+  border: transparent;
+}
+
+.delete:hover {
+  background-color: #ff1515;
+}
+
+.date {
+  color: #63636362;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-pay {
+  color: #63636396;
+  margin-top: 15px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.total-amount {
+  color: #63636396;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.line-bar {
+  border-top: 1px solid #00000009;
+}
+
+.transactions {
+  text-align: center;
+  color: #636363;
+}
+
+.action-btn {
+  padding: 2%;
+}
+
+.no {
+  margin-left: 15px;
+}
+
+.add-tran {
+  background-color: #15184e;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1%;
+  font-weight: bold;
+  border: transparent;
+}
+
+.record-tran {
+  color: #636363;
+  border-radius: 10px;
+  padding: 1%;
+  font-weight: bold;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-cat {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: #fff;
+  padding: 1%;
+}
+
+.name-date {
+  display: flex;
+  flex-direction: column;
+  line-height: 35px;
+}
+
+.total-amount3 {
+  margin-top: 13px;
+  padding-right: 8%;
+  color: #636363;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+}
+
+.tan-det {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: #cbcbcddb;
+  padding: 1%;
+  border-radius: 20px;
+}
+
+.space {
+  display: flex;
+}
+
+.tran-date {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #636363;
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.delete2 {
+  background-color: #15184e;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15%;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-right: 26px;
+  border: transparent;
+  
+}
+
+.delete2:hover {
+  background-color: #ff1515;
+}
