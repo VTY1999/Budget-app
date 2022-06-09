@@ -57,7 +57,7 @@ body {
   border: transparent;
   font-size: 20px;
   padding: 2%;
-  background-color: #ffffff00;
+  background-color: #fff0;
   color: #636363;
 }
 
@@ -142,9 +142,9 @@ body {
 }
 
 .categories {
- display: flex;
- width: 20%;
- height: 20%;
+  display: flex;
+  width: 20%;
+  height: 20%;
 }
 
 .details {
@@ -327,7 +327,6 @@ body {
   margin-top: 60px;
   margin-right: 26px;
   border: transparent;
-  
 }
 
 .delete2:hover {
