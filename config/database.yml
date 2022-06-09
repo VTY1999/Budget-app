@@ -24,7 +24,7 @@ development:
   database: Budgetapp_development
   host: localhost
   username: postgres
-  password: 1234567
+  password: Oluwatoyin1@
   encoding: UTF8
   port: 5432
 
@@ -33,11 +33,11 @@ test:
   database: Budgetapp_test
   username: postgres
   host: localhost
-  password: 1234567
+  password: Oluwatoyin1@
 
 production:
   <<: *default
   database: Budgetapp_production
   username: postgres
   host: localhost
-  password: 1234567
+  password: Oluwatoyin1@
