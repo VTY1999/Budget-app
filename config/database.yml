@@ -21,7 +21,7 @@ default: &default
 
 development:
   <<: *default
-  database: Recipeapp_development
+  database: Budgetapp_development
   host: localhost
   username: postgres
   password: 1234567
@@ -30,14 +30,14 @@ development:
 
 test:
   <<: *default
-  database: Recipeapp_test
+  database: Budgetapp_test
   username: postgres
   host: localhost
   password: 1234567
 
 production:
   <<: *default
-  database: Recipeapp_production
+  database: Budgetapp_production
   username: postgres
   host: localhost
   password: 1234567
