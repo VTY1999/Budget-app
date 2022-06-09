@@ -1,0 +1,2 @@
+module CategoryEntitiesHelper
+end

@@ -1,0 +1,29 @@
+<nav class="header-categories d-flex flex-center">
+  <div class="icons">
+    <%= link_to  categories_path do %>
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    <% end %>
+  </div>
+  <h1 class="headers">Transaction details</h1>
+</nav>
+
+<div class="transactions show d-flex"> 
+  <h2></h2>
+  <ul class="tan-det">
+    <li id="category-record" class="show">
+     <%= render @entity, class: "det-show" %>
+
+      <ul class="space">
+        <li class='tran-date'>
+          <p> <strong>Create Date: </strong> <p>
+          <span class=""> <%= @entity.created_at.strftime('%Y') %>
+            <span>_<%= @entity.created_at.to_formatted_s(:short) %></span>
+          </span>
+        </li>
+        <div class="">
+          <%=button_to 'Delete', {:controller => :entities, :action => 'destroy', :id => @entity.id}, :method => :delete, class: "delete2" %>
+        </div>
+      </ul>
+    </li>
+  </ul>
+</div>

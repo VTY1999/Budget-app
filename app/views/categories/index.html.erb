@@ -1,0 +1,24 @@
+<nav class="">
+  <%= link_to  destroy_user_session_path class: "icons" do%>
+    <p class="btn-out">SIGN OUT</p>
+  <% end %>
+    <h1 class="headers">CATEGORIES</h1>
+</nav>
+
+
+  <% if @categories.empty? %>
+    <article class="category">
+      <p>No Category found, please add one  !!</p>
+    </article>
+  <% end %>
+  <div class="">
+  <% @categories.each do |category| %>
+    <%= link_to category, class: "" do %>
+      <%= render category, class: "" %>
+    <%end%>
+  <% end %>
+</div>
+
+<div class="new-cat-btn">
+  <button class="btn-cat"><%= link_to "ADD CATEGORY", new_category_path, class: "c" %></button> 
+</div>
