@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-- [Bugdet-app](https://tybudget-app.herokuapp.com/)
+- [Bugdet-app](https://arcane-escarpment-57706.herokuapp.com/)
 
 ## Presentation video
 
