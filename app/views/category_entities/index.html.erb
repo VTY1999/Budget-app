@@ -1,0 +1,12 @@
+<h1>Category records</h1>
+
+<div id="category_records">
+  <% @category_entities.each do |category_entity| %>
+    <%= render category_record %>
+    <p>
+      <%= link_to "View", category_entity %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New category record", categories_path %>

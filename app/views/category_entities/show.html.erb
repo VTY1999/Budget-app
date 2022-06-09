@@ -1,0 +1,7 @@
+<%= render @category_entity %>
+
+<div>
+  <%= link_to "Edit this category record", edit_category_record_path(@category_entity) %> |
+  <%= link_to "Back to category records", category_records_path %>
+  <%= button_to "Destroy this category record", @category_entity, method: :delete %>
+</div>
