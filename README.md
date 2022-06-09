@@ -4,15 +4,13 @@
 
 > Budget app is a mobile web application where you can manage your budget. you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-![app]()
-
 ## Live Demo
 
 - [Bugdet-app](https://arcane-escarpment-57706.herokuapp.com/)
 
 ## Presentation video
 
-[Presentation]()
+[Presentation](https://www.loom.com/share/252ded744a094d8d879320a8a3898a63)
 
 ## Built With
 
