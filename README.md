@@ -72,7 +72,7 @@ $ cd Budget-app
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/netman5/budget-app/issues).
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
